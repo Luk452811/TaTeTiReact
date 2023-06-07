@@ -1,0 +1,102 @@
+.game {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  height: 100vh;
+}
+
+.board {
+  display: flex;
+  flex-wrap: wrap;
+  width: 300px;
+  height: 300px;
+  border: none;
+  margin-bottom: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  justify-content: center;
+  align-items: center;
+}
+
+.square {
+  width: 100px;
+  height: 100px;
+  border: 1px solid rgb(255, 255, 255);
+  box-sizing: border-box;
+  font-size: 72px;
+  display: flex;
+  justify-content: center;
+  align-items: end;
+  cursor: pointer;
+  user-select: none;
+  background-image: linear-gradient(to bottom right, #099163, #008080);
+  color: white;
+  font-family: 'Darumadrop One', cursive;
+  padding-bottom: 5px;
+  transition: filter 0.3s ease-in-out;
+  
+}
+.square:hover {
+  filter: brightness(90%);
+}
+.square.winner {
+  filter: brightness(70%);
+}
+
+
+
+.status {
+  margin-bottom: 10px;
+  background-image: linear-gradient(to bottom right, #321a01, #613500);
+  position: absolute;
+  top: 88%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  justify-content: center;
+  align-items: center;
+  padding: 10px 20px;
+  width: 300px;
+  height: 57px;
+  font-family: 'Monomaniac One', sans-serif;
+  font-size: 32px;
+  color: white;
+  border-radius: 20px;
+  border-color: rgb(255, 255, 255);
+  border-width: thick;
+  border-style: solid;
+}
+
+.reset-button {
+  
+  border: none;
+  cursor: pointer;
+  padding: 10px 20px;
+  text-transform: uppercase;
+  height: 50px;
+  width: 50px;
+  position: absolute;
+  top: 16%;
+  left: 38.4%;
+  transition: filter 0.3s ease-in-out;
+  
+}
+.reset-button:hover {
+  filter: brightness(90%);
+
+}
+
+
+
+body {
+  background-image: url('/src/images/beach.gif');
+  background-size: cover;
+  height: 100vh;
+  margin: 0%;
+  background-size: 100% 100%;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-position: center;
+}

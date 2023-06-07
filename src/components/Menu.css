@@ -1,0 +1,47 @@
+body {
+    background-image: url('/src/images/beach.gif');
+    background-size: cover;
+    height: 100vh;
+    margin: 0%;
+    background-size: 100% 100%; 
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+  .menu-title-container {
+    background-image: url('/src/images/title.png');
+    background-size: 540px auto;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-position:top;
+    height: 470px;
+    margin-top: 0%;
+  
+  }
+  .menu {
+    text-align: center;
+  }
+  
+  .play-button-container {
+    margin-top: 20px; /* Ajusta el margen superior según tus necesidades */
+  }
+
+  
+  .play-button {
+    font-size: 18px;
+    padding: 10px 20px;
+    width: 340px;
+    height: 77px;
+    font-family: 'Monomaniac One', sans-serif;
+    font-size: 32px;
+    border-radius: 28px;
+    border-color: black;
+    border-style: dashed;
+    cursor: pointer;
+    transition: filter 0.3s ease-in-out;
+    background-color: black;
+    color: white;
+  }
+  .play-button:hover {
+    filter: brightness(20%);
+  }
